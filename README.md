@@ -1,7 +1,10 @@
 # Netflix
 create database netflix_titles;
+
 use netflix_titles;
+
 select * from netflix_titles;
+
 -- replacing the empty strings with none for director
 
 SELECT director, COALESCE(NULLIF(director, ''), 'none') AS director_filled FROM netflix_titles;
